@@ -1,0 +1,32 @@
+.chatWrapper {
+    position: fixed;
+    width: 50%;
+    height: 50%;
+    top: 20%;
+    left: 25%;
+}
+
+.messageContainer {
+    height: 400px !important;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+}
+.messageFooter {
+    position: relative;
+    width: 95%;
+}
+.noneBorder {
+    border: none !important;
+}
+.fullWidth {
+    width: 100% !important;
+}
+
+.commentMargin {
+    margin-left: 40%;
+}
+
+.commentWrapper {
+    height: auto !important;
+ }
