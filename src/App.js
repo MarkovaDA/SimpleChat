@@ -10,11 +10,8 @@ import { connectNotifyAction } from './actions/ConnectServerAction';
 class App extends Component {
 
   componentWillMount() {
-    this.props.handleMessage();
-    this.props.unconnectServerNotify();
-    this.props.connectServerNotify();
+    this.props.bindChatEvents();
   }
-
 
   render() {
     return (
@@ -24,26 +21,16 @@ class App extends Component {
 }
 
 export default connect(
-  state => ({
-
-  }),
+  state => ({}),
   dispatch => ({
-    //hashmap: event => handler in method bindChatEvents()
+    bindChatEvents: () => {
+      const eventHandlers = {'message': handleMessageAction, 'open': connectNotifyAction, 'close': unconnectNotifyAction};
 
-    handleMessage: () => {
-      messageService.on('message', (data) => {
-        dispatch(handleMessageAction(data));
-      });
-    },
-    connectServerNotify: () => {
-      messageService.on('open', () => {
-        dispatch(connectNotifyAction());
-      });
-    },
-    unconnectServerNotify: () => {
-      messageService.on('close', () => {
-        dispatch(unconnectNotifyAction());
-      });
+      for(let event in eventHandlers) {
+        messageService.on(event, (data) => {
+          dispatch(eventHandlers[event](data));
+        });
+      }
     }
   }))
 (App);

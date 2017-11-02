@@ -4,9 +4,9 @@ import { Header, Icon, Segment} from 'semantic-ui-react';
 class ChatHeader extends Component {
   render() {
     return (
-      <Segment attached='top' >
+      <Segment attached='top' secondary>
         <Header as='h3'>
-          <Icon name='group' color={'blue'}/>
+          <Icon name='group' color='blue'/>
           <Header.Content>
             Simple chat
           </Header.Content>

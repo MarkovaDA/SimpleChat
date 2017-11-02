@@ -1,14 +1,14 @@
 import { messageService } from './../service/MessageService';
 
-export const subscribeChatEvents = (state = {isConnect: false, newMessage: null, chatMessages: []}, action) => {
+export const subscribeChatEvents = (state = {isConnect: false, newMessage: null, chatMessages: [], clientMessages:[]}, action) => {
   switch(action.type) {
     case 'SEND_MESSAGE':
       messageService.sendMessage(action.message);
       return {
         ...state,
+        clientMessages:[...state.clientMessages, state.chatMessages.length] //сохраняем номера сообщений текущего клиента
       };
     case 'NEW_MESSAGE':
-      //console.log('NEW_MESSAGE', action.newMessage);
       return {
         ...state,
         chatMessages: [...state.chatMessages, action.newMessage]

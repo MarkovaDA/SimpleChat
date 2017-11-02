@@ -10,7 +10,7 @@ class CommentPattern extends Component {
 
   render() {
     const userIcon = require('../../images/user-icon3.png');
-    const isMine = this.props.isMine;
+    const isMine = this.props.isMine; //инициировано ли сообщение текущим клиентом?
 
     return (
       <Comment>
