@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="685a1d4b-9323-4086-bbf3-f1909a1ef0f6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/daryamarkova.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Replic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/server/listener.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/server/listener.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/SendMessageAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/SendMessageAction.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Chat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/partials/Message.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/partials/Message.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/reducers/ChatEventsReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/ChatEventsReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/MessageService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/MessageService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/ChatStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/ChatStyle.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,8 +20,8 @@
       <file leaf-file-name="Chat.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Chat.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="78" column="20" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="20" />
+            <state relative-caret-position="446">
+              <caret line="102" column="30" lean-forward="true" selection-start-line="102" selection-start-column="30" selection-end-line="102" selection-end-column="30" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
                 <element signature="n#!!block;n#componentDidMount#0;n#Chat#0" />
@@ -44,8 +36,8 @@
       <file leaf-file-name="ChatEventsReducer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/reducers/ChatEventsReducer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="255">
+              <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -53,8 +45,8 @@
       <file leaf-file-name="Message.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/partials/Message.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="38" lean-forward="true" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+            <state relative-caret-position="420">
+              <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -83,8 +75,8 @@
       <file leaf-file-name="Status.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/partials/Status.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+            <state relative-caret-position="165">
+              <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -141,9 +133,9 @@
         <option value="$PROJECT_DIR$/src/models/Model.js" />
         <option value="$PROJECT_DIR$/src/models/Message.js" />
         <option value="$PROJECT_DIR$/src/service/MessageService.js" />
-        <option value="$PROJECT_DIR$/src/reducers/ChatEventsReducer.js" />
         <option value="$PROJECT_DIR$/src/models/Replic.js" />
         <option value="$PROJECT_DIR$/src/components/partials/Message.js" />
+        <option value="$PROJECT_DIR$/src/reducers/ChatEventsReducer.js" />
         <option value="$PROJECT_DIR$/src/components/Chat.js" />
       </list>
     </option>
@@ -282,26 +274,26 @@
       <workItem from="1544250946442" duration="7091000" />
       <workItem from="1544281195354" duration="2285000" />
       <workItem from="1544284885253" duration="3700000" />
-      <workItem from="1544294954205" duration="5387000" />
+      <workItem from="1544294954205" duration="6259000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115590000" />
+    <option name="totallyTimeSpent" value="116462000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="815" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7462888" visible="true" weight="0.18541667" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7468355" visible="true" weight="0.18541667" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.39930555" side_tool="true" visible="true" weight="0.0" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.46805555" side_tool="true" visible="true" weight="0.14709851" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6006944" visible="true" weight="0.0" />
-      <window_info id="npm" order="2" sideWeight="0.2537112" side_tool="true" visible="true" weight="0.18541667" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6006944" weight="0.0" />
+      <window_info id="npm" order="2" sideWeight="0.25316456" side_tool="true" visible="true" weight="0.18541667" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.5159722" weight="0.13090418" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.53194445" visible="true" weight="0.14709851" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -522,16 +514,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/partials/Status.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/models.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -556,13 +538,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/SendMessageAction.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="25" lean-forward="true" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/models/Replic.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -570,27 +545,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/ChatEventsReducer.js">
+    <entry file="file://$PROJECT_DIR$/src/components/partials/Status.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/partials/Message.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="38" lean-forward="true" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+        <state relative-caret-position="165">
+          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/SendMessageAction.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="25" lean-forward="true" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/partials/Message.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/ChatEventsReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Chat.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="78" column="20" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="20" />
+        <state relative-caret-position="446">
+          <caret line="102" column="30" lean-forward="true" selection-start-line="102" selection-start-column="30" selection-end-line="102" selection-end-column="30" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
             <element signature="n#!!block;n#componentDidMount#0;n#Chat#0" />

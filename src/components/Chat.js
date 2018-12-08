@@ -83,7 +83,8 @@ class Chat extends Component {
                 this.props.chatMessages.map((message, number) =>
                     <Message
                         key={number}
-                        message={message} />
+                        message={message}
+                        isMine={this.props.currentUser === message.author} />
                     )
               }
             </Comment.Group>
@@ -110,10 +111,7 @@ class Chat extends Component {
 
 export default connect(
   state => ({
-    //сообщения всего чата
-    chatMessages: state.chatMessages,
-    //сообщения, отправленные только текущим клиентом
-    clientMessages: state.clientMessages
+    chatMessages: state.chatMessages
   }),
   dispatch =>  ({
     sendMessage: (msgText, author) => {
