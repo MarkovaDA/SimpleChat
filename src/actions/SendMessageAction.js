@@ -1,6 +1,6 @@
-export const sendMessageAction = (txtMessage) => {
+export const sendMessageAction = (message) => {
   return {
     type: 'SEND_MESSAGE',
-    message: txtMessage
+    message: message
   }
 };

@@ -14,6 +14,8 @@ import Message from './partials/Message';
 import Title from './partials/Title';
 import Status from './partials/Status';
 
+import Replic  from './../models/Replic'
+
 import './../styles/ChatStyle.css';
 import 'semantic-ui-css/semantic.min.css';
 
@@ -57,14 +59,14 @@ class Chat extends Component {
 
   //отправка сообщения при клике на кнопку
   onClick = () => {
-    this.props.sendMessage(this.state.currentMessage);
+    this.props.sendMessage(this.state.currentMessage, this.props.currentUser);
     this.clearMessage();
   };
 
   //или при клике на текстовом поле
   onInputEnterPress = (event) => {
     if (event.key === 'Enter') {
-      this.props.sendMessage(this.state.currentMessage);
+      this.props.sendMessage(this.state.currentMessage, this.props.currentUser);
       this.clearMessage();
     }
   };
@@ -81,9 +83,7 @@ class Chat extends Component {
                 this.props.chatMessages.map((message, number) =>
                     <Message
                         key={number}
-                        isMine={this.props.clientMessages.indexOf(number)!== -1}
-                        currentUser={this.props.currentUser}
-                        message={message}/>
+                        message={message} />
                     )
               }
             </Comment.Group>
@@ -116,13 +116,15 @@ export default connect(
     clientMessages: state.clientMessages
   }),
   dispatch =>  ({
-    sendMessage: (msg) => {
-      if (msg !== '') {
-        messageService.sendMessage(msg);
-        dispatch(sendMessageAction(msg))
+    sendMessage: (msgText, author) => {
+      if (msgText !== '') {
+        const replic = new Replic(msgText, author);
+        messageService.sendMessage(replic.getSerializedObject());
+        dispatch(sendMessageAction(replic));
       }
     },
     bindChatEvents: () => {
+        //а для этого создать перечисление
         const eventHandlers = {
           'message': handleMessageAction,
           'open': connectNotifyAction,

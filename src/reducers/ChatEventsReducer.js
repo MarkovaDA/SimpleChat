@@ -1,3 +1,4 @@
+import Replic from '../models/Replic';
 
 
 export const subscribeChatEvents = (state = {isConnect: false, newMessage: null, chatMessages: [], clientMessages:[]}, action) => {
@@ -8,10 +9,10 @@ export const subscribeChatEvents = (state = {isConnect: false, newMessage: null,
         clientMessages:[...state.clientMessages, state.chatMessages.length] //сохраняем номера сообщений текущего клиента
       };
     case 'NEW_MESSAGE':
-      console.log('NEW MESSAGE');
+      const newMessage = Replic.getMessageObject(action.newMessage);
       return {
         ...state,
-        chatMessages: [...state.chatMessages, action.newMessage]
+        chatMessages: [...state.chatMessages, newMessage]
       };
     case 'CONNECT_SERVER':
       console.log('CONNECT_SERVER');

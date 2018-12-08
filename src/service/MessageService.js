@@ -15,8 +15,8 @@ class MessageService {
     this.socket['on'.concat(eventTitle)] = (event) => eventHandler(event.data);
   };
 
-  sendMessage = (msgText) => {
-    this.socket.send(msgText);
+  sendMessage = (message) => {
+    this.socket.send(message);
   };
 }
 

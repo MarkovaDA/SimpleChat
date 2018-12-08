@@ -36,7 +36,6 @@ webSocketServer.on('connection', function(client) {
     for (var key in clients) {
       clients[key].send(message);
     }
-
   });
 
   client.on('close', function() {
