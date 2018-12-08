@@ -10,6 +10,7 @@ var bufferSize = 10;
 var webSocketServer = new WebSocketServer.Server({
   port: 3001
 });
+
 webSocketServer.on('connection', function(client) {
   var id = Math.random();
   clients[id] = client;
@@ -23,12 +24,10 @@ webSocketServer.on('connection', function(client) {
   }
 
   client.on('message', function(message) {
-    //вместе с message отсылать идентификатор клиента
     console.log('получено сообщение ' + message);
     messages.push(message);
-    //очищаем буфер из сообщений
+
     if (messages.length >= bufferSize) {
-      //образаем таким образом, чтобы оставались последние 10 элементов
       messages = messages.slice(-1*bufferSize);
     }
     //рассылаем сообщение всем подключенным клиентам

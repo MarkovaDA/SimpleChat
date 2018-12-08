@@ -1,24 +1,19 @@
-class MessageService {
-  static instance = null;
+import openSocket from 'socket.io-client';
 
-  constructor() {
-    if (!MessageService.instance) {
-      MessageService.instance = this;
-      this.getConnection();
-    }
-  }
+export class MessageService {
 
-  getConnection = () => {
-    this.socket = new WebSocket("ws://localhost:3001");
-  };
+    static getConnection = () => {
+        if (!this.socket) {
+            this.socket = openSocket('http://localhost:8000');
+        }
 
-  on = (eventTitle, eventHandler) => {
-    this.socket['on'.concat(eventTitle)] = (event) => eventHandler(event.data);
-  };
+        return this.socket;
+    };
 
-  sendMessage = (msgText) => {
-    this.socket.send(msgText);
-  };
-
+    static on = (eventTitle, eventHandler) => {
+        //this.socket['on'.concat(eventTitle)] = (event) => eventHandler(event.data);
+        this.socket.on(eventTitle, (event) => {
+            console.log(eventTitle + 'IIII');
+        });
+    };
 }
-export const messageService = new MessageService();
