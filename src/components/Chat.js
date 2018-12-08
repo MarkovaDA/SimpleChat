@@ -2,9 +2,13 @@ import React, { Component } from 'react';
 import ReactDOM  from 'react-dom';
 
 import { connect } from 'react-redux';
-import { sendMessageAction } from './../actions/SendMessageAction';
-import { Button, Comment, Segment, Input} from 'semantic-ui-react';
 
+import { sendMessageAction } from './../actions/SendMessageAction';
+import { handleMessageAction } from './../actions/HandleMessageAction';
+import { unconnectNotifyAction } from './../actions/UnconnectServerAction';
+import { connectNotifyAction } from './../actions/ConnectServerAction';
+
+import { Button, Comment, Segment, Input} from 'semantic-ui-react';
 
 import Message from './partials/Message';
 import Title from './partials/Title';
@@ -13,14 +17,18 @@ import Status from './partials/Status';
 import './../styles/ChatStyle.css';
 import 'semantic-ui-css/semantic.min.css';
 
+import { messageService } from "./../service/MessageService";
+
 
 class Chat extends Component {
   state = {
     currentMessage: ''
   };
 
-  constructor() {
-    super();
+
+  componentDidMount() {
+      messageService.getConnection();
+      this.props.bindChatEvents();
   }
 
   componentDidUpdate() {
@@ -107,12 +115,26 @@ export default connect(
     //сообщения, отправленные только текущим клиентом
     clientMessages: state.clientMessages
   }),
-  dispatch => ({
-    //инициируем отправку сообщения
+  dispatch =>  ({
     sendMessage: (msg) => {
       if (msg !== '') {
+        messageService.sendMessage(msg);
         dispatch(sendMessageAction(msg))
       }
+    },
+    bindChatEvents: () => {
+        const eventHandlers = {
+          'message': handleMessageAction,
+          'open': connectNotifyAction,
+          'close': unconnectNotifyAction,
+          'error': unconnectNotifyAction
+        };
+
+        for(let event in eventHandlers) {
+            messageService.on(event, (data) => {
+                dispatch(eventHandlers[event](data));
+            });
+        }
     }
   })
 )(Chat);

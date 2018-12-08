@@ -10,6 +10,7 @@ var bufferSize = 10;
 var webSocketServer = new WebSocketServer.Server({
   port: 3001
 });
+
 webSocketServer.on('connection', function(client) {
   var id = Math.random();
   clients[id] = client;

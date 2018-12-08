@@ -4,7 +4,6 @@ class MessageService {
   constructor() {
     if (!MessageService.instance) {
       MessageService.instance = this;
-      this.getConnection();
     }
   }
 
@@ -19,6 +18,7 @@ class MessageService {
   sendMessage = (msgText) => {
     this.socket.send(msgText);
   };
-
 }
+
 export const messageService = new MessageService();
+
