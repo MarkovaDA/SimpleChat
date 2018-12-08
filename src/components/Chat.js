@@ -1,17 +1,20 @@
 import React, { Component } from 'react';
 import ReactDOM  from 'react-dom';
+
 import { connect } from 'react-redux';
 import { sendMessageAction } from './../actions/SendMessageAction';
-import './../styles/ChatStyle.css';
 import { Button, Comment, Segment, Input} from 'semantic-ui-react';
-import CommentPattern from './partials/CommentPattern';
-import ChatHeader from './partials/ChatHeader';
-import ConnectionStatus from './partials/ConnectionStatus';
 
+
+import Message from './partials/Message';
+import Title from './partials/Title';
+import Status from './partials/Status';
+
+import './../styles/ChatStyle.css';
 import 'semantic-ui-css/semantic.min.css';
 
 
-class ChatPreview extends Component {
+class Chat extends Component {
   state = {
     currentMessage: ''
   };
@@ -61,21 +64,35 @@ class ChatPreview extends Component {
   render() {
     return (
       <div className='chatWrapper'>
-        <ChatHeader />
+        <Title />
         <Segment attached className='messageContainer'>
-          <ConnectionStatus />
+          <Status />
           <div className='commentWrapper' ref={div => {this.chat = div}}>
             <Comment.Group>
               {
-                this.props.chatMessages.map((message, number) => <CommentPattern key={number} isMine={this.props.clientMessages.indexOf(number)!== -1} message={message}/>)
+                this.props.chatMessages.map((message, number) =>
+                    <Message
+                        key={number}
+                        isMine={this.props.clientMessages.indexOf(number)!== -1}
+                        currentUser={this.props.currentUser}
+                        message={message}/>
+                    )
               }
             </Comment.Group>
           </div>
         </Segment>
         <Segment attached='bottom'>
-          <Input value={this.state.currentMessage} onChange={this.onMessageChange} onKeyPress={this.onInputEnterPress} action placeholder='input your message' className='fullWidth'>
+          <Input action
+              value={this.state.currentMessage}
+              onChange={this.onMessageChange}
+              onKeyPress={this.onInputEnterPress}
+              placeholder='input your message'
+              className='fullWidth'>
             <input />
-            <Button onClick={this.onClick} content='send' primary />
+            <Button primary
+                onClick={this.onClick}
+                content='send'
+            />
           </Input>
         </Segment>
       </div>
@@ -98,4 +115,4 @@ export default connect(
       }
     }
   })
-)(ChatPreview);
+)(Chat);

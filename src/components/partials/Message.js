@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Comment, Label, Divider } from 'semantic-ui-react';
 
-class CommentPattern extends Component {
+class Message extends Component {
 
   getCurrentDateAndTime = () => {
     const date = new Date();
@@ -16,7 +16,7 @@ class CommentPattern extends Component {
       <Comment>
         {!isMine && <Comment.Avatar src={userIcon} />}
         <Comment.Content className={isMine ? 'commentMargin' : ''}>
-          <Comment.Author as='a'>{isMine ? 'You:' : 'Unknown:'}</Comment.Author>
+          <Comment.Author as='a'>{this.props.currentUser}</Comment.Author>
           <Comment.Metadata>
             <div>Today at {this.getCurrentDateAndTime()}</div>
           </Comment.Metadata>
@@ -30,4 +30,4 @@ class CommentPattern extends Component {
   }
 }
 
-export default CommentPattern;
+export default Message;

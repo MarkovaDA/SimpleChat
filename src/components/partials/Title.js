@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Header, Icon, Segment} from 'semantic-ui-react';
 
-class ChatHeader extends Component {
+class Title extends Component {
   render() {
     return (
       <Segment attached='top' secondary>
@@ -15,4 +15,4 @@ class ChatHeader extends Component {
     )
   }
 }
-export default ChatHeader;
+export default Title;
