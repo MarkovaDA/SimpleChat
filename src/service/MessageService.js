@@ -1,3 +1,5 @@
+import openSocket from 'socket.io-client';
+
 class MessageService {
   static instance = null;
 
@@ -8,15 +10,15 @@ class MessageService {
   }
 
   getConnection = () => {
-    this.socket = new WebSocket("ws://localhost:3001");
+      this.socket = openSocket("localhost:8000");
   };
 
-  on = (eventTitle, eventHandler) => {
-    this.socket['on'.concat(eventTitle)] = (event) => eventHandler(event.data);
+  subscribe = (eventTitle, eventHandler) => {
+    this.socket.on(eventTitle, (data) => eventHandler(data));
   };
 
   sendMessage = (message) => {
-    this.socket.send(message);
+    this.socket.emit('send', message);
   };
 }
 

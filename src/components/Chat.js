@@ -3,7 +3,7 @@ import ReactDOM  from 'react-dom';
 
 import { connect } from 'react-redux';
 
-import { sendMessageAction } from './../actions/SendMessageAction';
+
 import { handleMessageAction } from './../actions/HandleMessageAction';
 import { unconnectNotifyAction } from './../actions/UnconnectServerAction';
 import { connectNotifyAction } from './../actions/ConnectServerAction';
@@ -38,6 +38,13 @@ class Chat extends Component {
     this.scrollToBottom();
   }
 
+  sendMessage = (msgText, author) => {
+      if (msgText !== '') {
+          const replic = new Replic(msgText, author);
+          messageService.sendMessage(replic.getSerializedObject());
+      }
+  };
+
   //очистка текстового поля сообщения
   clearMessage = () => {
     this.setState({
@@ -59,14 +66,14 @@ class Chat extends Component {
 
   //отправка сообщения при клике на кнопку
   onClick = () => {
-    this.props.sendMessage(this.state.currentMessage, this.props.currentUser);
+    this.sendMessage(this.state.currentMessage, this.props.currentUser);
     this.clearMessage();
   };
 
   //или при клике на текстовом поле
   onInputEnterPress = (event) => {
     if (event.key === 'Enter') {
-      this.props.sendMessage(this.state.currentMessage, this.props.currentUser);
+      this.sendMessage(this.state.currentMessage, this.props.currentUser);
       this.clearMessage();
     }
   };
@@ -114,26 +121,9 @@ export default connect(
     chatMessages: state.chatMessages
   }),
   dispatch =>  ({
-    sendMessage: (msgText, author) => {
-      if (msgText !== '') {
-        const replic = new Replic(msgText, author);
-        messageService.sendMessage(replic.getSerializedObject());
-        dispatch(sendMessageAction(replic));
-      }
-    },
     bindChatEvents: () => {
-        const eventHandlers = {
-          'message': handleMessageAction,
-          'open': connectNotifyAction,
-          'close': unconnectNotifyAction,
-          'error': unconnectNotifyAction
-        };
-
-        for(let event in eventHandlers) {
-            messageService.on(event, (data) => {
-                dispatch(eventHandlers[event](data));
-            });
-        }
+      messageService.subscribe('open', (data) => dispatch(connectNotifyAction(data)));
+      messageService.subscribe('send', (data) => dispatch(handleMessageAction(data)));
     }
   })
 )(Chat);
