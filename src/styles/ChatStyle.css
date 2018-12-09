@@ -23,14 +23,9 @@
     width: 100% !important;
 }
 
-.commentMargin {
-    margin-left: 40%;
-}
-
 .commentWrapper {
     height: auto !important;
 }
-
 .chat-error-message {
     width: 260px !important;
     position: absolute !important;

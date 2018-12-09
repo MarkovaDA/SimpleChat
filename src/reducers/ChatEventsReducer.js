@@ -1,5 +1,5 @@
 import Replic from '../models/Replic';
-import { messageService } from '../service/MessageService';
+import {messageService} from '../service/MessageService';
 
 export const subscribeChatEvents = (state = {isConnect: false, chatMessages: [], offlineUser: null}, action) => {
   switch(action.type) {

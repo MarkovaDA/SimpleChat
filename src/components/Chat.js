@@ -10,7 +10,7 @@ import { connectNotifyAction } from './../actions/ConnectServerAction';
 import { Button, Comment, Segment, Input} from 'semantic-ui-react';
 
 import Notifier from './partials/Notifier'
-import Message from './partials/Message';
+import Message from './partials/Message/Message';
 import Title from './partials/Title';
 import Status from './partials/Status';
 

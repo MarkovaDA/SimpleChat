@@ -24,7 +24,7 @@ class App extends Component {
     render() {
         const chatRenderer = () => {
             if (this.state.currentUser != null) {
-                return <Chat currentUser={this.state.currentUser} />
+                return <Chat userName={this.state.currentUser} />
             } else {
                 return <Redirect to={'/welcome'}/>
             }
