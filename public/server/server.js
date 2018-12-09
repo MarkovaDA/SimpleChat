@@ -2,19 +2,20 @@ const io = require('socket.io')();
 
 const buffer = 10; //размер буфера сохраняемых сообщений
 let messages = [];
-let currentClient;
+let clients = {};
 
 io.on('connection', (client) => {
     console.log('new_connection');
     io.sockets.emit('open');
 
+    const id = Math.random();
     if (messages.length > 0) {
         for(var index in messages)
             io.sockets.emit('send', messages[index]);
     }
 
     client.on('join', (username) => {
-        currentClient = username;
+        clients[id] = username;
     });
 
     client.on('send', (data) => {
@@ -27,8 +28,8 @@ io.on('connection', (client) => {
     });
 
     client.on('disconnect', () => {
-        io.sockets.emit('leave', currentClient);
-        console.log('client disconnect', currentClient)
+        io.sockets.emit('leave', clients[id]);
+        console.log('client disconnect', clients[id])
     });
 });
 
