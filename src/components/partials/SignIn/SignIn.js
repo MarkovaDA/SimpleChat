@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 import {
     Segment,
     Button,
-    Form, Header
+    Form,
+    Header
 } from 'semantic-ui-react';
 
 import './SignIn.css';

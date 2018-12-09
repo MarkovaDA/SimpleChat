@@ -30,7 +30,7 @@ class Chat extends Component {
 
   componentDidMount() {
       messageService.getConnection();
-      this.props.bindChatEvents(this.props.currentUser);
+      this.props.bindChatEvents(this.props.userName);
   }
 
   componentDidUpdate() {
@@ -65,14 +65,14 @@ class Chat extends Component {
 
   //отправка сообщения при клике на кнопку
   onClick = () => {
-    this.sendMessage(this.state.currentMessage, this.props.currentUser);
+    this.sendMessage(this.state.currentMessage, this.props.userName);
     this.clearMessage();
   };
 
   //или при клике на текстовом поле
   onInputEnterPress = (event) => {
     if (event.key === 'Enter') {
-      this.sendMessage(this.state.currentMessage, this.props.currentUser);
+      this.sendMessage(this.state.currentMessage, this.props.userName);
       this.clearMessage();
     }
   };
@@ -90,7 +90,7 @@ class Chat extends Component {
                     <Message
                         key={number}
                         message={message}
-                        isMine={this.props.currentUser === message.author} />
+                        isMine={this.props.userName === message.author} />
                     )
               }
             </Comment.Group>
