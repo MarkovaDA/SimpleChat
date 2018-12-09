@@ -31,13 +31,6 @@
     height: auto !important;
  }
 
-.sign-in-container {
-    text-align: center !important;
-    width: 300px;
-    margin: 200px auto !important;
-    padding: 30px 20px !important;
-}
-
 .chat-error-message {
     width: 260px !important;
     position: absolute !important;
