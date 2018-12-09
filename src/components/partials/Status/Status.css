@@ -1,0 +1,5 @@
+.chatErrorMessage {
+    width: 260px !important;
+    position: absolute !important;
+    bottom: 10px;
+}

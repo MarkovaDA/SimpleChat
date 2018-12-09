@@ -26,8 +26,3 @@
 .commentWrapper {
     height: auto !important;
 }
-.chat-error-message {
-    width: 260px !important;
-    position: absolute !important;
-    bottom: 10px;
-}

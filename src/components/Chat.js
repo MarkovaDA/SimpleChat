@@ -12,7 +12,7 @@ import { Button, Comment, Segment, Input} from 'semantic-ui-react';
 import Notifier from './partials/Notifier/Notifier'
 import Message from './partials/Message/Message';
 import Title from './partials/Title';
-import Status from './partials/Status';
+import Status from './partials/Status/Status';
 
 import Replic  from './../models/Replic'
 

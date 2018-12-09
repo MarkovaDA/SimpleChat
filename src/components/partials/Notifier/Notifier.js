@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
-import {connect} from 'react-redux';
-import {Divider, Icon} from 'semantic-ui-react'
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { Divider } from 'semantic-ui-react'
 
 class Notifier extends Component {
     state = {

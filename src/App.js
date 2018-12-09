@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 import Chat from './components/Chat';
 import SignIn from './components/partials/SignIn/SignIn';
