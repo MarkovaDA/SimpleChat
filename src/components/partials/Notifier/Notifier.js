@@ -1,15 +1,14 @@
-import React, { Component } from 'react';
-import { Divider, Icon } from 'semantic-ui-react'
-
-import { connect } from 'react-redux';
+import React, {Component} from 'react';
+import {connect} from 'react-redux';
+import {Divider, Icon} from 'semantic-ui-react'
 
 class Notifier extends Component {
     state = {
-      hidden: false
+        hidden: false
     };
 
     componentWillReceiveProps() {
-        setTimeout(this.hide.bind(this), 3000);
+        setTimeout(this.hide.bind(this), 2000);
     }
 
     isVisible() {
@@ -32,7 +31,7 @@ class Notifier extends Component {
         )
     }
 }
+
 export default connect(state => ({
     offlineUser: state.offlineUser
-}))
-(Notifier)
+}))(Notifier)

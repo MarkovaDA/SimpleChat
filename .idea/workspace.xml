@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="685a1d4b-9323-4086-bbf3-f1909a1ef0f6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/partials/Message/Message.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Chat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/partials/Message.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/partials/Message/Message.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/ChatEventsReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/ChatEventsReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/ChatStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/ChatStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/partials/Notifier.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/partials/Notifier.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -58,13 +53,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChatEventsReducer.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ChatEventsReducer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/reducers/ChatEventsReducer.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
               <caret line="7" column="14" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChatStyle.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/styles/ChatStyle.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Notifier.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/partials/Notifier.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -119,7 +135,6 @@
         <option value="$PROJECT_DIR$/src/actions/HandleMessageAction.js" />
         <option value="$PROJECT_DIR$/src/actions/LeaveUserAction.js" />
         <option value="$PROJECT_DIR$/public/server/server.js" />
-        <option value="$PROJECT_DIR$/src/components/partials/Notifier.js" />
         <option value="$PROJECT_DIR$/src/actions/ConnectServerAction.js" />
         <option value="$PROJECT_DIR$/src/service/MessageService.js" />
         <option value="$PROJECT_DIR$/package.json" />
@@ -127,11 +142,12 @@
         <option value="$PROJECT_DIR$/src/components/partials/SignIn/SignIn.css" />
         <option value="$PROJECT_DIR$/src/components/partials/SignIn/SignIn.js" />
         <option value="$PROJECT_DIR$/src/components/Chat.js" />
-        <option value="$PROJECT_DIR$/src/styles/ChatStyle.css" />
         <option value="$PROJECT_DIR$/src/components/partials/Message/Message.css" />
         <option value="$PROJECT_DIR$/src/components/partials/Message/Message.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/reducers/ChatEventsReducer.js" />
+        <option value="$PROJECT_DIR$/src/styles/ChatStyle.css" />
+        <option value="$PROJECT_DIR$/src/components/partials/Notifier.js" />
       </list>
     </option>
   </component>
@@ -152,7 +168,7 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="71" />
+    <option name="x" value="15" />
     <option name="y" value="23" />
     <option name="width" value="1770" />
     <option name="height" value="816" />
@@ -285,10 +301,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137461000" />
+    <option name="totallyTimeSpent" value="137798000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="71" y="23" width="1770" height="816" extended-state="0" />
+    <frame x="15" y="23" width="1770" height="816" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.88245314" visible="true" weight="0.12937853" />
@@ -469,16 +485,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/server/listener.js" />
     <entry file="file://$PROJECT_DIR$/src/actions/UnconnectServerAction.js" />
-    <entry file="file://$PROJECT_DIR$/src/components/partials/Notifier.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/actions/ConnectServerAction.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -541,13 +547,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/ChatStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/partials/Message/Message.css">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -591,6 +590,23 @@
           <caret line="7" column="14" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/ChatStyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/partials/Notifier.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
