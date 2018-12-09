@@ -122,7 +122,6 @@ export default connect(
       }
     },
     bindChatEvents: () => {
-        //а для этого создать перечисление
         const eventHandlers = {
           'message': handleMessageAction,
           'open': connectNotifyAction,

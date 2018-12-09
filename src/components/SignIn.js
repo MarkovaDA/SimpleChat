@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import { Segment, Button, Form, Header } from 'semantic-ui-react';
+
+
+import './../styles/ChatStyle.css';
 
 class SignIn extends Component {
     state = {
@@ -17,11 +21,13 @@ class SignIn extends Component {
 
     render() {
         return (
-            <div>
-                <input type='text' placeholder='username' value={this.state.currentUser} onChange={this.onUsernameChange}/>
-                <br />
-                <button onClick={this.onSignIn}>Sign In</button>
-            </div>
+            <Segment className='sign-in-container'>
+                <Header as='h3'>Simple chat</Header>
+                <Form unstackable>
+                    <Form.Input  placeholder='username' value={this.state.currentUser} onChange={this.onUsernameChange}/>
+                    <Button type='submit' onClick={this.onSignIn}>Join</Button>
+                </Form>
+            </Segment>
         )
     }
 }
