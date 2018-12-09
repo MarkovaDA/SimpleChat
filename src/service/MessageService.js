@@ -9,8 +9,13 @@ class MessageService {
     }
   }
 
-  getConnection = () => {
+  getUserConnection = (username) => {
       this.socket = openSocket("localhost:8000");
+      this.joinChat(username);
+  };
+
+  joinChat = (username) => {
+    this.socket.emit('join', username);
   };
 
   subscribe = (eventTitle, eventHandler) => {
@@ -20,6 +25,7 @@ class MessageService {
   sendMessage = (message) => {
     this.socket.emit('send', message);
   };
+
 }
 
 export const messageService = new MessageService();

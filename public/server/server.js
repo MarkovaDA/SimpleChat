@@ -13,6 +13,10 @@ io.on('connection', (client) => {
             io.sockets.emit('send', messages[index]);
     }
 
+    client.on('join', (username) => {
+        currentClient = username;
+    });
+
     client.on('send', (data) => {
         messages.push(data);
         io.sockets.emit('send', data);

@@ -3,13 +3,14 @@ import ReactDOM  from 'react-dom';
 
 import { connect } from 'react-redux';
 
-
 import { handleMessageAction } from './../actions/HandleMessageAction';
+import { leaveUserAction } from './../actions/LeaveUserAction';
 import { unconnectNotifyAction } from './../actions/UnconnectServerAction';
 import { connectNotifyAction } from './../actions/ConnectServerAction';
 
 import { Button, Comment, Segment, Input} from 'semantic-ui-react';
 
+import Notifier from './partials/Notifier'
 import Message from './partials/Message';
 import Title from './partials/Title';
 import Status from './partials/Status';
@@ -29,7 +30,7 @@ class Chat extends Component {
 
 
   componentDidMount() {
-      messageService.getConnection();
+      messageService.getUserConnection(this.props.currentUser);
       this.props.bindChatEvents();
   }
 
@@ -111,6 +112,7 @@ class Chat extends Component {
             />
           </Input>
         </Segment>
+        <Notifier />
       </div>
     );
   }
@@ -124,6 +126,7 @@ export default connect(
     bindChatEvents: () => {
       messageService.subscribe('open', (data) => dispatch(connectNotifyAction(data)));
       messageService.subscribe('send', (data) => dispatch(handleMessageAction(data)));
+      messageService.subscribe('leave', (data) => dispatch(leaveUserAction(data)));
     }
   })
 )(Chat);
