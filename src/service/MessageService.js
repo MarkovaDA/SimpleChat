@@ -29,7 +29,6 @@ class MessageService {
   sendMessage = (message) => {
     this.socket.emit('send', message);
   };
-
 }
 
 export const messageService = new MessageService();

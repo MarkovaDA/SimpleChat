@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 import Chat from './components/Chat';
-import SignIn from './components/SignIn';
+import SignIn from './components/partials/SignIn/SignIn';
 
 import {
     BrowserRouter as Router,
@@ -17,7 +17,7 @@ class App extends Component {
 
     onUserSignedIn = (currentUser) => {
         this.setState({
-            currentUser: currentUser
+            userName: currentUser
         });
     };
 
