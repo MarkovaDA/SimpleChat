@@ -11,7 +11,6 @@ export const subscribeChatEvents = (state = {isConnect: false, chatMessages: [],
       };
     case 'CONNECT_SERVER':
       messageService.joinUserToChat(action.newUser);
-      console.log(action.newUser);
       return {
         ...state,
         isConnect: true

@@ -18,6 +18,10 @@ class MessageService {
     this.socket.emit('join', username);
   };
 
+  isConnected = () => {
+    return this.socket && this.socket.connected;
+  };
+
   subscribe = (eventTitle, eventHandler) => {
     this.socket.on(eventTitle, (data) => eventHandler(data));
   };

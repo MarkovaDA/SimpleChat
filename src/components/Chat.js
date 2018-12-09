@@ -5,7 +5,6 @@ import { connect } from 'react-redux';
 
 import { handleMessageAction } from './../actions/HandleMessageAction';
 import { leaveUserAction } from './../actions/LeaveUserAction';
-import { unconnectNotifyAction } from './../actions/UnconnectServerAction';
 import { connectNotifyAction } from './../actions/ConnectServerAction';
 
 import { Button, Comment, Segment, Input} from 'semantic-ui-react';

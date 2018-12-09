@@ -9,8 +9,7 @@ class Status extends Component {
       <div>
       {
         !this.props.isConnect &&
-        <Message negative>
-          <Message.Header>Sorry, the server connection was broken</Message.Header>
+        <Message negative className='chat-error-message'>
           <p>Chat is unavailable</p>
         </Message>
       }
