@@ -30,12 +30,11 @@ class Chat extends Component {
 
 
   componentDidMount() {
-      messageService.getUserConnection(this.props.currentUser);
-      this.props.bindChatEvents();
+      messageService.getConnection();
+      this.props.bindChatEvents(this.props.currentUser);
   }
 
   componentDidUpdate() {
-    //прокручиваем контент
     this.scrollToBottom();
   }
 
@@ -123,8 +122,8 @@ export default connect(
     chatMessages: state.chatMessages
   }),
   dispatch =>  ({
-    bindChatEvents: () => {
-      messageService.subscribe('open', (data) => dispatch(connectNotifyAction(data)));
+    bindChatEvents: (currentUser) => {
+      messageService.subscribe('open', () => dispatch(connectNotifyAction(currentUser)));
       messageService.subscribe('send', (data) => dispatch(handleMessageAction(data)));
       messageService.subscribe('leave', (data) => dispatch(leaveUserAction(data)));
     }

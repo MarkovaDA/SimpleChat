@@ -1,5 +1,6 @@
-export const connectNotifyAction = () => {
+export const connectNotifyAction = (newUser) => {
   return {
-    type: 'CONNECT_SERVER'
+    type: 'CONNECT_SERVER',
+    newUser: newUser
   }
 };

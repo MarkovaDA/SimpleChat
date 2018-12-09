@@ -1,4 +1,5 @@
 import Replic from '../models/Replic';
+import { messageService } from '../service/MessageService';
 
 export const subscribeChatEvents = (state = {isConnect: false, chatMessages: [], offlineUser: null}, action) => {
   switch(action.type) {
@@ -9,6 +10,8 @@ export const subscribeChatEvents = (state = {isConnect: false, chatMessages: [],
         chatMessages: [...state.chatMessages, newMessage]
       };
     case 'CONNECT_SERVER':
+      messageService.joinUserToChat(action.newUser);
+      console.log(action.newUser);
       return {
         ...state,
         isConnect: true

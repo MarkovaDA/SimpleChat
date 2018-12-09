@@ -9,12 +9,12 @@ class MessageService {
     }
   }
 
-  getUserConnection = (username) => {
+  getConnection = () => {
       this.socket = openSocket("localhost:8000");
-      this.joinChat(username);
+      console.log(this.socket);
   };
 
-  joinChat = (username) => {
+  joinUserToChat = (username) => {
     this.socket.emit('join', username);
   };
 

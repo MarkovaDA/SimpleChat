@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="685a1d4b-9323-4086-bbf3-f1909a1ef0f6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/partials/Notifier.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/server/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/HandleMessageAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/HandleMessageAction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/LeaveUserAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/LeaveUserAction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/ConnectServerAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/ConnectServerAction.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Chat.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/reducers/ChatEventsReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/ChatEventsReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service/MessageService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/MessageService.js" afterDir="false" />
@@ -23,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Chat.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Chat.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Chat.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="823">
-              <caret line="121" column="13" lean-forward="true" selection-start-line="121" selection-start-column="13" selection-end-line="121" selection-end-column="13" />
+            <state relative-caret-position="351">
+              <caret line="124" column="38" selection-start-line="124" selection-start-column="38" selection-end-line="124" selection-end-column="38" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
                 <element signature="e#2537#2989#0" />
@@ -48,17 +44,29 @@
       <file leaf-file-name="ChatEventsReducer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/reducers/ChatEventsReducer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+            <state relative-caret-position="270">
+              <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Notifier.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ConnectServerAction.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/actions/ConnectServerAction.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="13" selection-start-column="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Notifier.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/partials/Notifier.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+            <state relative-caret-position="214">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -69,8 +77,8 @@
       <file leaf-file-name="MessageService.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/service/MessageService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+            <state relative-caret-position="450">
+              <caret line="30" selection-start-line="30" selection-end-line="30" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -130,7 +138,6 @@
         <option value="$PROJECT_DIR$/src/actions/UnConnectAction.js" />
         <option value="$PROJECT_DIR$/src/actions/UnconnectAction.js" />
         <option value="$PROJECT_DIR$/src/actions/UnconnectServerAction.js" />
-        <option value="$PROJECT_DIR$/src/actions/ConnectServerAction.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/components/partials/CommentPattern.js" />
         <option value="$PROJECT_DIR$/src/components/partials/ConnectionStatus.js" />
@@ -154,10 +161,11 @@
         <option value="$PROJECT_DIR$/src/actions/HandleMessageAction.js" />
         <option value="$PROJECT_DIR$/src/actions/LeaveUserAction.js" />
         <option value="$PROJECT_DIR$/public/server/server.js" />
+        <option value="$PROJECT_DIR$/src/components/partials/Notifier.js" />
         <option value="$PROJECT_DIR$/src/service/MessageService.js" />
+        <option value="$PROJECT_DIR$/src/actions/ConnectServerAction.js" />
         <option value="$PROJECT_DIR$/src/reducers/ChatEventsReducer.js" />
         <option value="$PROJECT_DIR$/src/components/Chat.js" />
-        <option value="$PROJECT_DIR$/src/components/partials/Notifier.js" />
       </list>
     </option>
   </component>
@@ -178,7 +186,7 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="19" />
+    <option name="x" value="55" />
     <option name="y" value="23" />
     <option name="width" value="1770" />
     <option name="height" value="816" />
@@ -304,27 +312,27 @@
       <workItem from="1544281195354" duration="2285000" />
       <workItem from="1544284885253" duration="3700000" />
       <workItem from="1544294954205" duration="6259000" />
-      <workItem from="1544336453691" duration="13234000" />
+      <workItem from="1544336453691" duration="14630000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129730000" />
+    <option name="totallyTimeSpent" value="131126000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="19" y="23" width="1770" height="816" extended-state="0" />
+    <frame x="55" y="23" width="1770" height="816" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7871363" visible="true" weight="0.21694915" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.78688526" visible="true" weight="0.21694915" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.4700565" side_tool="true" visible="true" weight="0.11994609" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.4700565" side_tool="true" visible="true" weight="0.17789757" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49943504" weight="0.32884097" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6" weight="0.6032389" />
-      <window_info id="npm" order="2" sideWeight="0.2128637" side_tool="true" visible="true" weight="0.21694915" />
+      <window_info id="npm" order="2" sideWeight="0.21311475" side_tool="true" visible="true" weight="0.21694915" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.5299435" visible="true" weight="0.11994609" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.5299435" visible="true" weight="0.17789757" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -495,13 +503,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/ConnectServerAction.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
@@ -584,17 +585,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/service/MessageService.js">
+    <entry file="file://$PROJECT_DIR$/src/components/partials/Notifier.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/ChatEventsReducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        <state relative-caret-position="214">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -605,23 +602,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Chat.js">
+    <entry file="file://$PROJECT_DIR$/src/service/MessageService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="823">
-          <caret line="121" column="13" lean-forward="true" selection-start-line="121" selection-start-column="13" selection-end-line="121" selection-end-column="13" />
+        <state relative-caret-position="450">
+          <caret line="30" selection-start-line="30" selection-end-line="30" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/ConnectServerAction.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/ChatEventsReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <element signature="e#2537#2989#0" />
+            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/partials/Notifier.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Chat.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+        <state relative-caret-position="351">
+          <caret line="124" column="38" selection-start-line="124" selection-start-column="38" selection-end-line="124" selection-end-column="38" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#2537#2989#0" />
           </folding>
         </state>
       </provider>
