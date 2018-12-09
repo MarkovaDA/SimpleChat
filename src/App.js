@@ -1,40 +1,59 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
+
 import Chat from './components/Chat';
 import SignIn from './components/SignIn';
 
-import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+import {
+    BrowserRouter as Router,
+    Route,
+    Switch,
+    Redirect
+} from 'react-router-dom';
 
 class App extends Component {
     state = {
         currentUser: null
     };
 
-  onUserSignedIn = (currentUser) => {
-      this.setState({
-          currentUser: currentUser
-      });
-  };
+    onUserSignedIn = (currentUser) => {
+        this.setState({
+            currentUser: currentUser
+        });
+    };
 
-  render() {
-    return (
-        <Router>
-            <Switch>
-                <Route path='/chat' exact render={ () => {
-                    return this.state.currentUser != null ?
-                        (<Chat currentUser={this.state.currentUser} />) :
-                        (<Redirect to={'/welcome'}/>)
-                }} />
-                <Route path='/welcome' exact render={() => {
-                    if (this.state.currentUser ) {
-                       return <Redirect to={'/chat'} />
-                    }
+    render() {
+        const chatRenderer = () => {
+            if (this.state.currentUser != null) {
+                return <Chat currentUser={this.state.currentUser} />
+            } else {
+                return <Redirect to={'/welcome'}/>
+            }
+        };
+        const welcomeRenderer = () => {
+            if (this.state.currentUser) {
+                return <Redirect to={'/chat'}/>
+            } else {
+               return <SignIn onUserSignedIn={this.onUserSignedIn} />
+            }
+        };
 
-                    return (<SignIn onUserSignedIn={this.onUserSignedIn}/>)
-                }} />
-                <Redirect to={'/welcome'} />
-            </Switch>
-        </Router>
-    );
-  }
+        return (
+            <Router>
+                <Switch>
+                    <Route
+                        exact
+                        path='/chat'
+                        render={chatRenderer}
+                    />
+                    <Route
+                        exact
+                        path='/welcome'
+                        render={welcomeRenderer}
+                    />
+                    <Redirect to={'/welcome'} />
+                </Switch>
+            </Router>
+        );
+    }
 }
 export default App;

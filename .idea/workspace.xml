@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="685a1d4b-9323-4086-bbf3-f1909a1ef0f6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/UnconnectServerAction.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Chat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/partials/Status.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/partials/Status.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/ChatEventsReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/ChatEventsReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/MessageService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/MessageService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/ChatStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/ChatStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,11 +20,23 @@
       <file leaf-file-name="Chat.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Chat.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="97" column="18" lean-forward="true" selection-start-line="97" selection-start-column="18" selection-end-line="97" selection-end-column="18" />
+            <state relative-caret-position="274">
+              <caret line="111" column="18" lean-forward="true" selection-start-line="111" selection-start-column="18" selection-end-line="111" selection-end-column="18" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
                 <element signature="e#2537#2989#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="263">
+              <caret line="34" column="20" lean-forward="true" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -45,15 +51,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="LeaveUserAction.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/actions/LeaveUserAction.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -63,11 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Status.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Status.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/partials/Status.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -110,7 +107,6 @@
         <option value="$PROJECT_DIR$/src/components/ChatPreview.js" />
         <option value="$PROJECT_DIR$/src/components/partials/ChatHeader.js" />
         <option value="$PROJECT_DIR$/src/components/partials/Title.js" />
-        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/models.js" />
         <option value="$PROJECT_DIR$/src/Model.js" />
         <option value="$PROJECT_DIR$/src/models/Model.js" />
@@ -133,6 +129,7 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/components/Chat.js" />
         <option value="$PROJECT_DIR$/src/components/partials/Status.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
       </list>
     </option>
   </component>
@@ -181,18 +178,6 @@
               <item name="SimpleChat" type="b2602c69:ProjectViewProjectNode" />
               <item name="SimpleChat" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SimpleChat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimpleChat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SimpleChat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimpleChat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -266,27 +251,27 @@
       <workItem from="1544281195354" duration="2285000" />
       <workItem from="1544284885253" duration="3700000" />
       <workItem from="1544294954205" duration="6259000" />
-      <workItem from="1544336453691" duration="18035000" />
+      <workItem from="1544336453691" duration="19697000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134531000" />
+    <option name="totallyTimeSpent" value="136193000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="23" width="1770" height="816" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.78763866" visible="true" weight="0.12937853" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7874794" visible="true" weight="0.12937853" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.4700565" side_tool="true" visible="true" weight="0.1495957" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.4700565" side_tool="true" visible="true" weight="0.1819407" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49943504" weight="0.32884097" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6" weight="0.6032389" />
-      <window_info id="npm" order="2" sideWeight="0.21236134" side_tool="true" visible="true" weight="0.12937853" />
+      <window_info id="npm" order="2" sideWeight="0.2125206" side_tool="true" visible="true" weight="0.12937853" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.5299435" visible="true" weight="0.1495957" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.5299435" visible="true" weight="0.1819407" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -450,16 +435,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/models.js" />
     <entry file="file://$PROJECT_DIR$/src/models/Replic.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -549,6 +524,16 @@
     <entry file="file://$PROJECT_DIR$/src/actions/HandleMessageAction.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/partials/Status.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/actions/LeaveUserAction.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -563,17 +548,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Chat.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="97" column="18" lean-forward="true" selection-start-line="97" selection-start-column="18" selection-end-line="97" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <element signature="e#2537#2989#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/service/MessageService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -581,10 +555,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/partials/Status.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Chat.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+        <state relative-caret-position="274">
+          <caret line="111" column="18" lean-forward="true" selection-start-line="111" selection-start-column="18" selection-end-line="111" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#2537#2989#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="34" column="20" lean-forward="true" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
